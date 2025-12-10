@@ -1,0 +1,257 @@
+/* ========================================================= */
+/* 1. ГЛОБАЛЬНЫЕ СБРОСЫ И БАЗОВЫЕ СТИЛИ */
+/* ========================================================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    color: #000;
+}
+
+/* ========================================================= */
+/* 2. ДЕСКТОПНЫЙ ХЕДЕР */
+/* ========================================================= */
+
+.header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 36px;
+    height: 100%;
+    /* color: #000; */
+    width: 100%;
+}
+
+.header-logo {
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-list {
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    max-width: 500px;
+    padding-top: 36px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header-list a {
+    color: #000
+}
+
+.header-list a:hover {
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+.fallen-greatnes {
+    margin-left: 20px;
+    padding-top: 32px;
+}
+
+.language-switcher {
+    padding-top: 28px;
+    position: relative;
+}
+
+.language-select {
+    background: transparent;
+    color: #000;
+    border: none;
+    padding: 8px 30px 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+.language-select option {
+    background: #363636;
+    color: #ca1919;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+.footer {
+    margin-top: 30px;
+    border-top: 1px solid #d1d1d1;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.footer-link {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.footer-link a {
+    color: #040404 !important;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 330px) {
+    .container {
+        max-width: 320px;
+        padding: 0 15px;
+    }
+
+    /* 
+    .header {
+        background-image: url(../imagess/header-bg-modile.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 568px;
+        max-height: 568px;
+        padding-top: 0;
+        position: relative;
+    }
+
+    .header-nav {
+        padding: 20px 0;
+        position: relative;
+        z-index: 100;
+    }
+
+    .menu-btn {
+        display: flex;
+        position: static;
+    }
+
+    .header-nav>.language-switcher,
+    .header-nav>.fallen-greatnes {
+        display: none;
+    }
+
+    .header-list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #000 !important;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .header-list.active {
+        right: 0;
+    } */
+
+    /* .header-list-item {
+        border-bottom: 1px solid #000;
+    } */
+
+    /* В мобильном меню: ГАРАНТИРУЕМ ЧЕРНЫЙ ТЕКСТ */
+    /* .header-list-link {
+        display: block;
+        padding: 20px 0;
+        font-size: 16px;
+        color: #000 !important;
+        text-decoration: none;
+    }
+
+    .header-list::before {
+        content: "▶ Fallen Greatness";
+        color: #000;
+
+        display: block;
+        padding: 20px 0;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .header-list::after {
+        content: "RU ▼";
+        color: #000;
+        display: block;
+        padding: 20px 0;
+        font-size: 16px;
+        margin-top: 20px;
+    } */
+
+    /* --- АДАПТИВНЫЙ ФУТЕР --- */
+    .footer {
+        min-height: 43px;
+        height: 43px;
+        padding: 0 !important;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 15px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .footer-container {
+        display: none;
+        /* Скрываем ссылки */
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
